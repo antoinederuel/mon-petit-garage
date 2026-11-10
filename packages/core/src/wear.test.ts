@@ -39,7 +39,12 @@ describe("computeWear", () => {
   });
 
   it("prend le critère le plus pénalisant", () => {
-    const res = computeWear(chain, [ride("r", "2026-02-01T08:00:00Z", 100)], { meters: 3_000_000, months: 6 }, "2026-06-15T00:00:00Z");
+    const res = computeWear(
+      chain,
+      [ride("r", "2026-02-01T08:00:00Z", 100)],
+      { meters: 3_000_000, months: 6 },
+      "2026-06-15T00:00:00Z",
+    );
     expect(res.drivenBy).toBe("months");
     expect(res.status).toBe("watch");
   });

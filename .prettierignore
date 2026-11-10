@@ -1,0 +1,9 @@
+node_modules/
+pnpm-lock.yaml
+dist/
+.next/
+.turbo/
+coverage/
+
+# Docs rédigées à la main
+*.md

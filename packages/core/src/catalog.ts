@@ -17,7 +17,12 @@ export const COMPONENT_TYPES: ComponentType[] = [
   { id: "brake-rotor", name: "Disque de frein", category: "brakes", defaultLifespan: { meters: km(15000) } },
   { id: "bar-tape", name: "Guidoline", category: "contact", defaultLifespan: { months: 12 } },
   { id: "sealant", name: "Préventif tubeless", category: "tires", defaultLifespan: { months: 4 } },
-  { id: "fork-service", name: "Révision fourche (bas de fourreaux)", category: "suspension", defaultLifespan: { seconds: h(50) } },
+  {
+    id: "fork-service",
+    name: "Révision fourche (bas de fourreaux)",
+    category: "suspension",
+    defaultLifespan: { seconds: h(50) },
+  },
   { id: "shock-service", name: "Révision amortisseur", category: "suspension", defaultLifespan: { seconds: h(50) } },
 ];
 

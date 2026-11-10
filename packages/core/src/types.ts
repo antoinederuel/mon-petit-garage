@@ -1,13 +1,6 @@
 /** Unités internes : distances en mètres, durées en secondes, dates ISO UTC. */
 
-export type ComponentCategory =
-  | "drivetrain"
-  | "brakes"
-  | "tires"
-  | "wheels"
-  | "suspension"
-  | "contact"
-  | "other";
+export type ComponentCategory = "drivetrain" | "brakes" | "tires" | "wheels" | "suspension" | "contact" | "other";
 
 export interface Lifespan {
   meters?: number;

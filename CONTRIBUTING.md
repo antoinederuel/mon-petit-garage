@@ -9,7 +9,7 @@ automatiquement à partir de ses sorties pour le prévenir avant qu'une pièce l
 Détails : `docs/CADRAGE.md` · Roadmap : `docs/ROADMAP.md` · Décisions : `docs/decisions/`
 
 ## Stack (voir ADR 0001)
-- Monorepo **pnpm workspaces** + Turborepo
+- Monorepo **pnpm workspaces** + Turborepo · ESLint + Prettier (voir ADR 0002)
 - `apps/web` : **Next.js** (App Router) + TypeScript + Tailwind
 - `apps/mobile` : **Expo / React Native** (phase 2, ne pas toucher avant la fin du MVP web)
 - `packages/core` : logique métier pure en TypeScript (modèle de données, calcul d'usure). **Aucune dépendance à React, Next ou la BDD.**
@@ -30,7 +30,8 @@ Détails : `docs/CADRAGE.md` · Roadmap : `docs/ROADMAP.md` · Décisions : `doc
 pnpm install          # installer
 pnpm dev              # lancer le web en local
 pnpm test             # tests (Vitest)
-pnpm lint             # lint
+pnpm lint             # lint (ESLint)
+pnpm format           # formater le code (Prettier) ; pnpm format:check pour vérifier
 pnpm typecheck        # vérif TypeScript
 pnpm db:migrate       # migrations Prisma (une fois apps/web initialisé)
 ```
