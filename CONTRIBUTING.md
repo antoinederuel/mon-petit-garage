@@ -41,7 +41,7 @@ pnpm db:migrate       # migrations Prisma (une fois apps/web initialisé)
 1. Prendre la première tâche non cochée de `docs/ROADMAP.md`.
 2. Écrire un plan court (fichiers touchés, tests, risques) avant de coder.
 3. Branche `feat/<nom-court>`, implémentation + tests.
-4. `pnpm lint && pnpm typecheck && pnpm test` au vert.
+4. `pnpm lint && pnpm typecheck && pnpm test` au vert (la CI les relance sur chaque PR, avec `format:check` et `build`).
 5. Cocher la tâche dans la roadmap, commit Conventional Commits, PR.
 
 ## Hors périmètre MVP (ne pas implémenter sans demande)

@@ -6,7 +6,7 @@ Cocher `[x]` quand une tâche est mergée.
 - [x] Structure du monorepo, guide de contribution, cadrage
 - [x] Installer les outils du monorepo (Turborepo, ESLint, Prettier, Vitest) et faire passer `pnpm lint/typecheck/test`
 - [x] Initialiser `apps/web` avec Next.js (App Router, TS, Tailwind) et le brancher sur `@mon-petit-garage/core`
-- [ ] CI GitHub Actions : lint + typecheck + test sur chaque PR
+- [x] CI GitHub Actions : lint + typecheck + test sur chaque PR
 
 ## Phase 1 — Cœur métier (packages/core)
 - [ ] Compléter le catalogue `ComponentType` avec des durées de vie sourcées
