@@ -28,7 +28,8 @@ Détails : `docs/CADRAGE.md` · Roadmap : `docs/ROADMAP.md` · Décisions : `doc
 ## Commandes
 ```bash
 pnpm install          # installer
-pnpm dev              # lancer le web en local
+pnpm dev              # lancer le web en local (http://localhost:3000)
+pnpm build            # build de production
 pnpm test             # tests (Vitest)
 pnpm lint             # lint (ESLint)
 pnpm format           # formater le code (Prettier) ; pnpm format:check pour vérifier

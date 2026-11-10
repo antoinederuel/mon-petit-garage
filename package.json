@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "turbo run dev --filter=web",
+    "build": "turbo run build",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
     "lint": "turbo run lint",
