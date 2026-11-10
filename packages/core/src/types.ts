@@ -8,11 +8,31 @@ export interface Lifespan {
   months?: number;
 }
 
+/**
+ * Origine d'une durée de vie par défaut :
+ * - `manufacturer` : intervalle publié par un fabricant (révisions de suspension, préventif…) ;
+ * - `estimate` : ordre de grandeur tiré d'essais et de retours d'usage. Les fabricants donnent
+ *   rarement une durée en km pour les pièces d'usure : ils fixent un seuil mesurable (voir `wearCheck`).
+ */
+export type LifespanBasis = "manufacturer" | "estimate";
+
+export interface LifespanSource {
+  /** Nom lisible de la source (fabricant, média, atelier). */
+  label: string;
+  url: string;
+  /** Ce que la source affirme, en une phrase. */
+  claim: string;
+}
+
 export interface ComponentType {
   id: string;
   name: string;
   category: ComponentCategory;
   defaultLifespan: Lifespan;
+  basis: LifespanBasis;
+  /** Contrôle concret qui décide du remplacement, quelle que soit la durée de vie théorique. */
+  wearCheck: string;
+  sources: LifespanSource[];
 }
 
 export interface Component {
