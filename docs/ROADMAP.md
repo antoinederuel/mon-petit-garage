@@ -9,7 +9,7 @@ Cocher `[x]` quand une tâche est mergée.
 - [x] CI GitHub Actions : lint + typecheck + test sur chaque PR
 
 ## Phase 1 — Cœur métier (packages/core)
-- [ ] Compléter le catalogue `ComponentType` avec des durées de vie sourcées
+- [x] Compléter le catalogue `ComponentType` avec des durées de vie sourcées
 - [ ] Tests de `computeWear` sur les cas limites (aucune durée de vie, pièce retirée, plusieurs critères)
 - [ ] Fonction `rankComponentsByUrgency(bike)` pour le tableau de bord
 
