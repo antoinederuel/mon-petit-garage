@@ -16,6 +16,7 @@ docs/           Cadrage, roadmap, décisions d'architecture (ADR)
 ## Démarrer
 ```bash
 pnpm install
+pnpm dev     # http://localhost:3000
 pnpm test
 ```
 
